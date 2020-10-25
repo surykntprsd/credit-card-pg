@@ -1,0 +1,20 @@
+.ng-valid:not(div)
+{
+  border: 1px solid #008000;
+}
+
+.ng-invalid:not(div)
+{
+  border: 1px solid #ff4500;
+}
+
+.ng-pristine, .ng-untouched
+{
+  
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

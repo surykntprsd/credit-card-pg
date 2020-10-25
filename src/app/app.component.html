@@ -1,0 +1,12 @@
+<p>Card Payment Gateway</p>
+<form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+
+  <app-credit-card [placeHolder]="'Enter Card Number'"></app-credit-card>
+
+  <button class="submit-button form-pad-top" type="submit" [disabled]="!creditCardComponent.valid">Submit</button>
+</form>
